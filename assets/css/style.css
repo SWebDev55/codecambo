@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.close-menu{
+    display: none;
+}
+.user,
+.menu,
+.form{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.form{
+    width: 600px;
+    position: relative;
+}
+.form input{
+    width: 100%;
+    padding: 8px;
+}
+.form button{
+    position: absolute;
+    right: 0;
+    padding: 8px 20px;
+}
+.form-for-mobile{
+    display: none;
+    width: 100%;
+    position: relative;
+}
+.form-for-mobile input{
+    width: 100%;
+    padding: 8px;
+}
+.form-for-mobile button{
+    position: absolute;
+    right: 0;
+    padding: 8px 20px;
+}
+.main-box-detail .box-detail{
+    width: 100%;
+    height: 100%;
+}
+.feature-one .box,
+.feature-two .box{
+    width: 90%;
+}
+.feature-one .box img,
+.feature-two .box img{
+    width: 100%;
+    height: 100%;
+}
+.main-box-blog .main-box .box{
+    width: 270px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.main-box-blog .main-box .box .images{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+.main-box-blog .main-box .box .images img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+.main-box-blog .main-box .box .images img:hover{
+    transform: scale(1.1);
+}
+.main-box-blog .main-box .box .des h1{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+            line-clamp: 1; 
+    -webkit-box-orient: vertical;
+}
+.main-box-blog .main-box .box .des h6{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+
+.main-box-blog .main-box .box .images{
+    width: 250px;
+    height: 150px;
+}
+.main-box-blog .main-box .box .images img{
+    width: 100%;
+    height: 100%;
+}
+.box-in-box{
+    box-shadow: none;
+    padding: 0px;
+}

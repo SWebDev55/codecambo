@@ -1,0 +1,858 @@
+@media (min-width: 320px) and (max-width: 480px){
+    .close-menu{
+        display: block;
+    }
+   nav{
+        width: 100%;
+        padding: 10px;
+   }
+   nav .logo img{
+        width: 90%;
+        height: 100%;
+   }
+   nav .open-menu{
+        display: block;
+   }
+   .form-for-mobile{
+    display: block;
+   }
+   .main-box-menu .main-menu{
+        z-index: 100;
+        display: block;
+        background-color: #fff;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        overflow-x: hidden;
+        transition: 0.3s;
+   }
+   .main-box-menu .main-menu .menu ul{
+        padding-top: 70px;
+   }
+   .main-box-menu .main-menu .menu ul li{
+        display: block;
+        padding: 10px 0px;
+   }
+   .main-box-menu .main-menu .form{
+        display: none;
+   }
+
+   /* banner */
+   .banner{
+        width: 100%;
+        display: block;
+    }
+    .banner .main-box{
+        width: 100%;
+        display: block;
+        padding: 0px 10px;
+    }
+    .banner .main-box h1{
+        font-size: 33px;
+    }
+    .banner .main-box #digital-date{
+       padding: 0px;
+    }
+    .banner .main-box h6{
+        font-size: 25px;
+        padding: 10px 0px;
+    }
+    .banner .main-box ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+    }
+    .banner .main-box ul li{
+        font-size: 18px;
+        width: 20%;
+        height: 20%;
+        font-size: 15px;
+    }
+    .banner .main-box ul li span{
+        padding: 0px;
+        font-size: 20px;
+    }
+    .banner .main-box img{
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+    }
+
+    .about-home-page h1{
+        font-size: 33px;
+        margin: 10px 0px;
+    }
+    .about-home-page .main-box-detail-home-page{
+        display: inline-block;
+        width: 100%;
+    }
+    .about-home-page .main-box-detail-home-page .main-box{
+        width: 50%;
+        height: 175px;
+        float: left;
+    }
+    .about-home-page .main-box-detail-home-page .main-box .box-detail p{
+        /* float: left; */
+        font-size: 15px;
+    }
+
+    .feature-one,
+    .feature-two{
+        width: 100%;
+        padding: 10px;
+    }
+    .feature-one .box-one,
+    .feature-two .box-two{
+        display: block;
+    }
+    .feature-one .box-one h1,
+    .feature-two .box-two h1{
+        font-size: 32px;
+        padding: 10px 0px;
+    }
+    .feature-two .box-two p{
+        font-size: 15px;
+        padding: 10px 0px;
+    }
+
+
+    footer .main-box{
+        width: 100%;
+        padding: 10px;
+    }
+    footer .main-box .box{
+        display: block;
+    }
+    footer .main-box .box .col-span-4{
+        padding: 10px 0px;
+    }
+    footer .main-box .box .col-span-4 .logo img{
+        width: 70%;
+        height: 100%;
+        margin: auto;
+    }
+
+
+    /* blog page */
+    .top-list{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .top-list h6{
+        font-size: 20px;
+    }
+    .top-list .main-box{
+        display: block;
+    }
+    .top-list .main-box .col-span-6{
+        width: 100%;
+    }
+
+    .main-box-blog{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .main-box-blog h6{
+        font-size: 20px;
+    }
+    .main-box-blog .main-box{
+        display: inline-block;
+    }
+    .main-box-blog .main-box .box{
+        float: left;
+        width: 50%;
+        height: 100%;
+        box-shadow: none;
+        padding: 0px;
+        margin: 10px 0px;
+    }
+    .main-box-blog .main-box .box .box-in-box{
+        width: 95%;
+        height: 100%;
+        padding: 0;
+        border-radius: 10px;
+        margin: auto;
+    }
+    .main-box-blog .main-box .box .box-in-box .images,
+    .main-box-blog .main-box .box .box-in-box .images img{
+        width: 100%;
+        padding: 2px;
+    }
+
+
+    /* about page */
+    .main-box-about{
+        width: 100%;
+        padding: 10px !important;
+        margin: 10px 0px !important;
+    }
+    .main-box-about .main-box{
+        display: block;
+    }
+    .main-box-about .main-box .col-span-7{
+        width: 100%;
+    }
+    .main-box-about .main-box .col-span-7 h6{
+        text-align: center;
+    }
+    .main-box-about .main-box .col-span-5{
+        width: 100%;
+    }
+    .main-box-about .main-box .col-span-5 a,
+    .main-box-about .main-box .col-span-5 span{
+        font-size: 14px;
+        display: block;
+    }
+
+    /* contact */
+    .main-box-contact{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .main-box-contact .main-box{
+        display: block;
+    }
+
+    /* new detail */
+    .main-box-new-detail{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .main-box-new-detail .title{
+        font-size: 20px;
+    }
+    .main-box-new-detail .main-box{
+        display: block;
+    }
+    .main-box-new-detail .main-box .col-span-3{
+        display: inline-block;
+    }
+    .main-box-new-detail .main-box .col-span-3 a{
+        width: 50%;
+        float: left;
+    }
+    .main-box-new-detail .main-box .col-span-3 a .box{
+        width: 95%;
+        margin: 5px auto;
+    }
+}
+
+
+
+@media (min-width: 481px) and (max-width: 599px){
+    .close-menu{
+        display: block;
+    }
+   nav{
+        width: 100%;
+        padding: 10px;
+   }
+   nav .logo img{
+        width: 90%;
+        height: 100%;
+   }
+   nav .open-menu{
+        display: block;
+   }
+   .form-for-mobile{
+    display: block;
+   }
+   .main-box-menu .main-menu{
+        z-index: 100;
+        display: block;
+        background-color: #fff;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        overflow-x: hidden;
+        transition: 0.3s;
+   }
+   .main-box-menu .main-menu .menu ul{
+        padding-top: 70px;
+   }
+   .main-box-menu .main-menu .menu ul li{
+        display: block;
+        padding: 10px 0px;
+   }
+   .main-box-menu .main-menu .form{
+        display: none;
+   }
+
+   /* banner */
+   .banner{
+        width: 100%;
+        display: block;
+    }
+    .banner .main-box{
+        width: 100%;
+        display: block;
+        padding: 0px 10px;
+    }
+    .banner .main-box h1{
+        font-size: 33px;
+    }
+    .banner .main-box #digital-date{
+       padding: 0px;
+    }
+    .banner .main-box h6{
+        font-size: 25px;
+        padding: 10px 0px;
+    }
+    .banner .main-box ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+    }
+    .banner .main-box ul li{
+        font-size: 18px;
+        width: 20%;
+        height: 20%;
+        font-size: 15px;
+    }
+    .banner .main-box ul li span{
+        padding: 0px;
+        font-size: 20px;
+    }
+    .banner .main-box img{
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+    }
+
+    .about-home-page h1{
+        font-size: 33px;
+        margin: 10px 0px;
+    }
+    .about-home-page .main-box-detail-home-page{
+        display: inline-block;
+        width: 100%;
+    }
+    .about-home-page .main-box-detail-home-page .main-box{
+        width: 50%;
+        height: 175px;
+        float: left;
+    }
+    .about-home-page .main-box-detail-home-page .main-box .box-detail p{
+        /* float: left; */
+        font-size: 15px;
+    }
+
+    .feature-one,
+    .feature-two{
+        width: 100%;
+        padding: 10px;
+    }
+    .feature-one .box-one,
+    .feature-two .box-two{
+        display: block;
+    }
+    .feature-one .box-one h1,
+    .feature-two .box-two h1{
+        font-size: 32px;
+        padding: 10px 0px;
+    }
+    .feature-two .box-two p{
+        font-size: 15px;
+        padding: 10px 0px;
+    }
+
+
+    footer .main-box{
+        width: 100%;
+        padding: 10px;
+    }
+    footer .main-box .box{
+        display: block;
+    }
+    footer .main-box .box .col-span-4{
+        padding: 10px 0px;
+    }
+    footer .main-box .box .col-span-4 .logo img{
+        width: 50%;
+        height: 100%;
+        margin: auto;
+    }
+
+
+    /* blog page */
+    .top-list{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .top-list h6{
+        font-size: 20px;
+    }
+    .top-list .main-box{
+        display: block;
+    }
+    .top-list .main-box .col-span-6{
+        width: 100%;
+    }
+
+    .main-box-blog{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .main-box-blog h6{
+        font-size: 20px;
+    }
+    .main-box-blog .main-box{
+        display: inline-block;
+    }
+    .main-box-blog .main-box .box{
+        float: left;
+        width: 50%;
+        height: 100%;
+        box-shadow: none;
+        padding: 0px;
+        margin: 10px 0px;
+    }
+    .main-box-blog .main-box .box .box-in-box{
+        width: 95%;
+        height: 100%;
+        padding: 0;
+        border-radius: 10px;
+        margin: auto;
+    }
+    .main-box-blog .main-box .box .box-in-box .images,
+    .main-box-blog .main-box .box .box-in-box .images img{
+        width: 100%;
+        padding: 2px;
+    }
+
+    /* contact */
+    .main-box-contact{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .main-box-contact .main-box{
+        display: block;
+    }
+    /* new detail */
+    .main-box-new-detail{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .main-box-new-detail .title{
+        font-size: 20px;
+    }
+    .main-box-new-detail .main-box{
+        display: block;
+    }
+    .main-box-new-detail .main-box .col-span-3{
+        display: inline-block;
+    }
+    .main-box-new-detail .main-box .col-span-3 a{
+        width: 50%;
+        float: left;
+    }
+    .main-box-new-detail .main-box .col-span-3 a .box{
+        width: 95%;
+        margin: 5px auto;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 767px){
+    .close-menu{
+        display: block;
+    }
+   nav{
+        width: 100%;
+        padding: 10px;
+   }
+   nav .logo img{
+        width: 90%;
+        height: 100%;
+   }
+   nav .open-menu{
+        display: block;
+   }
+   .form-for-mobile{
+    display: block;
+   }
+   .main-box-menu .main-menu{
+        z-index: 100;
+        display: block;
+        background-color: #fff;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        overflow-x: hidden;
+        transition: 0.3s;
+   }
+   .main-box-menu .main-menu .menu ul{
+        padding-top: 70px;
+   }
+   .main-box-menu .main-menu .menu ul li{
+        display: block;
+        padding: 10px 0px;
+   }
+   .main-box-menu .main-menu .form{
+        display: none;
+   }
+
+   /* banner */
+   .banner{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .banner .main-box{
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .banner .main-box h1{
+        font-size: 33px;
+    }
+    .banner .main-box #digital-date{
+       padding: 0px;
+    }
+    .banner .main-box h6{
+        font-size: 25px;
+        padding: 10px 0px;
+    }
+    .banner .main-box ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px;
+    }
+    .banner .main-box ul li{
+        font-size: 18px;
+        width: 20%;
+        height: 20%;
+        font-size: 15px;
+    }
+    .banner .main-box ul li span{
+        padding: 0px;
+        font-size: 20px;
+    }
+    .banner .main-box img{
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+    }
+
+    .about-home-page h1{
+        font-size: 33px;
+        margin: 10px 0px;
+    }
+    .about-home-page .main-box-detail-home-page{
+        display: inline-block;
+        width: 100%;
+    }
+    .about-home-page .main-box-detail-home-page .main-box{
+        width: 33.3%;
+        height: 175px;
+        float: left;
+    }
+    .about-home-page .main-box-detail-home-page .main-box .box-detail p{
+        /* float: left; */
+        font-size: 15px;
+    }
+
+    .feature-one,
+    .feature-two{
+        width: 100%;
+        padding: 10px;
+    }
+    /* .feature-one .box-one,
+    .feature-two .box-two{
+        display: block;
+    } */
+    .feature-one .box-one h1,
+    .feature-two .box-two h1{
+        font-size: 28px;
+        padding: 10px 0px;
+    }
+    .feature-one .box-one h6,
+    .feature-one .box-two h6{
+        font-size: 16px;
+        padding: 10px 0px;
+    }
+    .feature-two .box-two p{
+        font-size: 15px;
+        padding: 0px 0px;
+    }
+
+
+    footer .main-box{
+        width: 100%;
+        padding: 10px;
+    }
+    footer .main-box .box .col-span-4 h6{
+        font-size: 25px;
+    }
+    footer .main-box .box .col-span-4 p{
+        font-size: 18px;
+    }
+    footer .main-box .box .col-span-4 a{
+        margin: 5px;
+    }
+
+
+    /* blog page */
+    .top-list{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .top-list h6{
+        font-size: 20px;
+    }
+    .top-list .main-box .col-span-6{
+        width: 100%;
+    }
+
+    .main-box-blog{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .main-box-blog h6{
+        font-size: 20px;
+    }
+    .main-box-blog .main-box{
+        display: inline-block;
+    }
+    .main-box-blog .main-box .box{
+        float: left;
+        width: 33.3%;
+        height: 100%;
+        box-shadow: none;
+        padding: 0px;
+        margin: 10px 0px;
+    }
+    .main-box-blog .main-box .box .box-in-box{
+        width: 95%;
+        height: 100%;
+        padding: 0;
+        border-radius: 10px;
+        margin: auto;
+    }
+    .main-box-blog .main-box .box .box-in-box .images,
+    .main-box-blog .main-box .box .box-in-box .images img{
+        width: 100%;
+        padding: 2px;
+    }
+
+    /* new detail */
+    .main-box-new-detail{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .main-box-new-detail .title{
+        font-size: 20px;
+    }
+    .main-box-new-detail .main-box{
+        display: block;
+    }
+    .main-box-new-detail .main-box .col-span-3{
+        display: inline-block;
+    }
+    .main-box-new-detail .main-box .col-span-3 a{
+        width: 33.3%;
+        float: left;
+    }
+    .main-box-new-detail .main-box .col-span-3 a .box{
+        width: 95%;
+        margin: 5px auto;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .close-menu{
+        display: none;
+    }
+    .menu ul li a{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .form{
+        width: 400px;
+        position: relative;
+    }
+
+   /* banner */
+   .banner{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .banner .main-box{
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .banner .main-box h1{
+        font-size: 33px;
+    }
+    .banner .main-box #digital-date{
+       padding: 0px;
+    }
+    .banner .main-box h6{
+        font-size: 25px;
+        padding: 10px 0px;
+    }
+    .banner .main-box ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px;
+    }
+    .banner .main-box ul li{
+        font-size: 18px;
+        width: 20%;
+        height: 20%;
+        font-size: 15px;
+    }
+    .banner .main-box ul li span{
+        padding: 0px;
+        font-size: 20px;
+    }
+    .banner .main-box img{
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+    }
+
+    .about-home-page h1{
+        font-size: 33px;
+        margin: 10px 0px;
+    }
+    .about-home-page .main-box-detail-home-page{
+        display: inline-block;
+        width: 100%;
+    }
+    .about-home-page .main-box-detail-home-page .main-box{
+        width: 20%;
+        height: 175px;
+        float: left;
+    }
+    .about-home-page .main-box-detail-home-page .main-box .box-detail p{
+        /* float: left; */
+        font-size: 15px;
+    }
+
+    .feature-one,
+    .feature-two{
+        width: 100%;
+        padding: 10px;
+    }
+    /* .feature-one .box-one,
+    .feature-two .box-two{
+        display: block;
+    } */
+    .feature-one .box-one h1,
+    .feature-two .box-two h1{
+        font-size: 28px;
+        padding: 10px 0px;
+    }
+    .feature-one .box-one h6,
+    .feature-one .box-two h6{
+        font-size: 16px;
+        padding: 10px 0px;
+    }
+    .feature-two .box-two p{
+        font-size: 15px;
+        padding: 0px 0px;
+    }
+
+
+    footer .main-box{
+        width: 100%;
+        padding: 10px;
+    }
+    footer .main-box .box .col-span-4 h6{
+        font-size: 25px;
+    }
+    footer .main-box .box .col-span-4 p{
+        font-size: 18px;
+    }
+    footer .main-box .box .col-span-4 a{
+        margin: 5px;
+    }
+
+    /* blog page */
+    .top-list{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .top-list h6{
+        font-size: 20px;
+    }
+    /* .top-list .main-box{
+        display: block;
+    } */
+    .top-list .main-box .col-span-6{
+        width: 100%;
+    }
+
+    .main-box-blog{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .main-box-blog h6{
+        font-size: 20px;
+    }
+    .main-box-blog .main-box{
+        display: inline-block;
+    }
+    .main-box-blog .main-box .box{
+        float: left;
+        width: 33.3%;
+        height: 100%;
+        box-shadow: none;
+        padding: 0px;
+        margin: 10px 0px;
+    }
+    .main-box-blog .main-box .box .box-in-box{
+        width: 95%;
+        height: 100%;
+        padding: 0;
+        border-radius: 10px;
+        margin: auto;
+    }
+    .main-box-blog .main-box .box .box-in-box .images,
+    .main-box-blog .main-box .box .box-in-box .images img{
+        width: 100%;
+        padding: 2px;
+    }
+
+
+    /* new detail */
+    .main-box-new-detail{
+        width: 100%;
+        padding: 10px !important;
+    }
+    /* .main-box-new-detail .main-box{
+        display: block;
+    }
+    .main-box-new-detail .main-box .col-span-3{
+        display: inline-block;
+    }
+    .main-box-new-detail .main-box .col-span-3 a{
+        width: 33.3%;
+        float: left;
+    }
+    .main-box-new-detail .main-box .col-span-3 a .box{
+        width: 95%;
+        margin: 5px auto;
+    } */
+}
+
+@media (min-width: 1025px){
+    .main-box-blog .main-box .box .box-in-box{
+        padding: 0;
+        box-shadow: none;
+    }
+}

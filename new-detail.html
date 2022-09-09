@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- framwork -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                    },  
+                }
+            }
+        }
+    </script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!-- jquery link -->
+    <script src="./assets/script/jquery.min.js"></script>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    
+
+    <title>CodeCambo</title>
+</head>
+<body>
+
+    <!-- header -->
+    <header class="bg-white">
+        <nav class="max-w-6xl m-auto flex justify-between items-center py-2">
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/images/logo/logo.png" alt="logo"></a>
+            </div>
+            <a href="#" class="open-menu text-2xl font-bold hidden" onclick="openNav()"><i class="fa fa-bars bg-blue-900 shadow w-10 h-10 flex justify-center items-center rounded-lg text-white"></i></a>
+            <!-- <div class="user flex justify-between items-center">
+                <a href="#" class="text-xl text-white font-bold py-1 px-3 border-2 rounded-md bg-blue-600">Loging</a>
+                &nbsp;<span class="text-3xl text-gray-600 font-bold">|</span>&nbsp;
+                <a href="#" class="text-xl text-white font-bold py-1 px-3 border-2 rounded-md bg-orange-600">Register</a>
+                <a href="#" class="text-xl text-black font-bold py-1 px-3 hidden"><i class="fa fa-bars"></i></a>
+            </div> -->
+        </nav>
+        <div class="main-box-menu shadow">
+            <div id="myNav" class="main-menu max-w-6xl m-auto py-2 flex justify-between items-center relative">
+                <a href="#" class="close-menu text-2xl font-bold absolute left-5 closebtn" onclick="closeNav()"><i class="fa fa-times bg-blue-900 shadow w-10 h-10 flex justify-center items-center rounded-lg text-white"></i></a>
+                <div class="menu">
+                    <ul class="m-0 p-0">
+                        <li class="inline-block"><a href="./index.html" class="hover:bg-gray-300 hover:text-orange-600 rounded block py-2 px-5 text-xl text-blue-800 font-bold flex items-center"><i class="fa fa-home"></i>&nbsp;Home</a></li>
+                        <li class="inline-block"><a href="./blog.html" class="hover:bg-gray-300 hover:text-orange-600 rounded block py-2 px-5 text-xl text-blue-800 font-bold flex items-center"><i class="fas fa-window-restore"></i>&nbsp;Our Blogs</a></li>
+                        <li class="inline-block"><a href="./about.html" class="hover:bg-gray-300 hover:text-orange-600 rounded block py-2 px-5 text-xl text-blue-800 font-bold flex items-center"><i class="fas fa-info-circle"></i>&nbsp;About Us</a></li>
+                        <li class="inline-block"><a href="./contact.html" class="hover:bg-gray-300 hover:text-orange-600 rounded block py-2 px-5 text-xl text-blue-800 font-bold flex items-center"><i class="fas fa-headset"></i>&nbsp;Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="form">
+                    <form action="#" method="get" enctype="multipart/form-data">
+                        <input type="text" placeholder="Search CodeCambo...!" name="box-search" class="border-2 outline-0 rounded-md">
+                        <button type="submit" name="btn-search" class="bg-gray-200 text-blue-800 border-l-0 border-r-2 border-t-2 border-b-2 rounded-r-md outline-0 hover:bg-gray-300 hover:text-orange-600 font-bold">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="form-for-mobile">
+            <form action="#" method="get" enctype="multipart/form-data">
+                <input type="text" placeholder="Search CodeCambo...!" name="box-search" class="border-2 outline-0 rounded-md">
+                <button type="submit" name="btn-search" class="bg-gray-200 text-blue-800 border-l-0 border-r-2 border-t-2 border-b-2 rounded-r-md outline-0 hover:bg-gray-300 hover:text-orange-600 font-bold">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <div class="main-box-new-detail row-start max-w-6xl m-auto p-10 my-10 bg-gray-200 rounded-lg">
+        <h6 class="title text-3xl text-orange-800 font-bold border-b-4 border-orange-800">New Detail</h6>
+        <div class="main-box grid grid-cols-12 gap-5 pt-5">
+            <div class="col-span-9">
+                <a href="#">
+                    <div class="img-new-detail rounded-lg my-5">
+                        <img src="https://via.placeholder.com/810x400" alt="" class="rounded-lg">
+                    </div>
+                </a>
+                <h6 class="text-xl py-2 text-red-500 font-bold">HTML Code</h6>
+                <textarea name="#" class="rounded-lg w-full border-0 outline-0 p-2" id="" cols="30" rows="10"></textarea>
+                <h6 class="text-xl py-2 text-red-500 font-bold">CSS Code</h6>
+                <textarea name="#" class="rounded-lg w-full border-0 outline-0 p-2" id="" cols="30" rows="10"></textarea>
+                <h6 class="text-xl py-2 text-red-500 font-bold">SCRIPT Code</h6>
+                <textarea name="#" class="rounded-lg w-full border-0 outline-0 p-2" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="col-span-3">
+                <a href="./new-detail.html">
+                    <div class="box shadow bg-white p-2 rounded-lg my-5">
+                        <div class="images rounded-lg">
+                            <img src="https://via.placeholder.com/270x150" alt="" class="rounded-lg">
+                        </div>
+                        <div class="des rounded-b-lg p-1">
+                            <h1 class="text-md text-blue-800 font-bold">Title</h1>
+                            <h6 class="text-sm text-blue-800 py-1">Your Detail</h6>
+                            <p class="text-xs text-blue-800 font-bold"><i class="fa fa-clock"></i>&nbsp;MMM-DD-YYYY</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./new-detail.html">
+                    <div class="box shadow bg-white p-2 rounded-lg my-5">
+                        <div class="images rounded-lg">
+                            <img src="https://via.placeholder.com/270x150" alt="" class="rounded-lg">
+                        </div>
+                        <div class="des rounded-b-lg p-1">
+                            <h1 class="text-md text-blue-800 font-bold">Title</h1>
+                            <h6 class="text-sm text-blue-800 py-1">Your Detail</h6>
+                            <p class="text-xs text-blue-800 font-bold"><i class="fa fa-clock"></i>&nbsp;MMM-DD-YYYY</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./new-detail.html">
+                    <div class="box shadow bg-white p-2 rounded-lg my-5">
+                        <div class="images rounded-lg">
+                            <img src="https://via.placeholder.com/270x150" alt="" class="rounded-lg">
+                        </div>
+                        <div class="des rounded-b-lg p-1">
+                            <h1 class="text-md text-blue-800 font-bold">Title</h1>
+                            <h6 class="text-sm text-blue-800 py-1">Your Detail</h6>
+                            <p class="text-xs text-blue-800 font-bold"><i class="fa fa-clock"></i>&nbsp;MMM-DD-YYYY</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-gray-900 pt-10">
+        <div class="main-box max-w-6xl m-auto">
+            <div class="row-start">
+                <div class="box grid grid-cols-12 gap-5">
+                    <div class="col-span-4">
+                        <div class="logo">
+                            <a href="./index.html"><img src="./assets/images/logo/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-span-4">
+                        <div class="about text-center text-white">
+                            <h6 class="text-3xl font-bold">About Us</h6>
+                            <p class="text-xl py-2">CodeCambo is a blog where you can learn HTML, CSS, Bootstrap, JavaScript, JQuery and Tailwind along with creative CSS Animations and Effects.</p>
+                        </div>
+                    </div>
+                    <div class="col-span-4">
+                        <div class="social text-white text-center">
+                            <h6 class="text-3xl font-bold">Follow Us</h6>
+                            <div class="inline-block">
+                                <a href="#" class="text-xl float-left mx-2 my-4 w-8 h-8"><img class="w-full h-full" src="./assets/images/icon/facebook.png" alt=""></a>
+                                <a href="#" class="text-xl float-left mx-2 my-4 w-8 h-8"><img class="w-full h-full" src="./assets/images/icon/youtube.png" alt=""></a>
+                                <a href="#" class="text-xl float-left mx-2 my-4 w-8 h-8"><img class="w-full h-full" src="./assets/images/icon/tiktok.png" alt=""></a>
+                                <a href="#" class="text-xl float-left mx-2 my-4 w-8 h-8"><img class="w-full h-full" src="./assets/images/icon/telegram.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="text-xl text-white font-bold text-center pt-5">Copyright © 2022 CodeCambo All Rights Reserved</h1>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script link -->
+    <script src="./assets/script/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

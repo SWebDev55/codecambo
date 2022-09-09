@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- framwork -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                        fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },  
+                }
+            }
+        }
+    </script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- jquery link -->
+    <script src="./assets/script/jquery.min.js"></script>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    
+
+    <title>CodeCambo</title>
+</head>
+<body>
+
+    <!-- header -->
+    <header class="bg-white">
+        <nav class="max-w-6xl m-auto flex justify-between items-center py-2">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./assets/images/logo/logo.png" alt="logo">
+                </a>
+            </div>
+            <a href="#" class="open-menu text-2xl font-bold hidden" onclick="openNav()"><i class="fa fa-bars bg-blue-900 shadow w-10 h-10 flex justify-center items-center rounded-lg text-white"></i></a>
+            <!-- <div class="user flex justify-between items-center">
+                <a href="#" class="text-xl text-white font-bold py-1 px-3 border-2 rounded-md bg-blue-600">Loging</a>
+                &nbsp;<span class="text-3xl text-gray-600 font-bold">|</span>&nbsp;
+                <a href="#" class="text-xl text-white font-bold py-1 px-3 border-2 rounded-md bg-orange-600">Register</a>
+                <a href="#" class="text-xl text-black font-bold py-1 px-3 hidden"><i class="fa fa-bars"></i></a>
+            </div> -->
+        </nav>
+        <div class="main-box-menu shadow">
+            <div id="myNav" class="main-menu max-w-6xl m-auto py-2 flex justify-between items-center relative">
+                <a href="#" class="close-menu text-2xl font-bold absolute left-5 closebtn" onclick="closeNav()"><i class="fa fa-times bg-blue-900 shadow w-10 h-10 flex justify-center items-center rounded-lg text-white"></i></a>
+                <div class="menu">
+                    <ul class="m-0 p-0">
+                        <li class="inline-block"><a href="./index.html" class="hover:bg-gray-300 hover:text-orange-600 rounded block py-2 px-5 text-xl text-blue-800 font-bold flex items-center"><i class="fa fa-home"></i>&nbsp;Home</a></li>
+                        <li class="inline-block"><a href="./blog.html" class="hover:bg-gray-300 hover:text-orange-600 rounded block py-2 px-5 text-xl text-blue-800 font-bold flex items-center"><i class="fas fa-window-restore"></i>&nbsp;Our Blogs</a></li>
+                        <li class="inline-block"><a href="./about.html" class="hover:bg-gray-300 hover:text-orange-600 rounded block py-2 px-5 text-xl text-blue-800 font-bold flex items-center"><i class="fas fa-info-circle"></i>&nbsp;About Us</a></li>
+                        <li class="inline-block"><a href="./contact.html" class="hover:bg-gray-300 hover:text-orange-600 rounded block py-2 px-5 text-xl text-blue-800 font-bold flex items-center"><i class="fas fa-headset"></i>&nbsp;Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="form">
+                    <form action="#" method="get" enctype="multipart/form-data">
+                        <input type="text" placeholder="Search CodeCambo...!" name="box-search" class="border-2 outline-0 rounded-md">
+                        <button type="submit" name="btn-search" class="bg-gray-200 text-blue-800 border-l-0 border-r-2 border-t-2 border-b-2 rounded-r-md outline-0 hover:bg-gray-300 hover:text-orange-600 font-bold">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="form-for-mobile">
+            <form action="#" method="get" enctype="multipart/form-data">
+                <input type="text" placeholder="Search CodeCambo...!" name="box-search" class="border-2 outline-0 rounded-md">
+                <button type="submit" name="btn-search" class="bg-gray-200 text-blue-800 border-l-0 border-r-2 border-t-2 border-b-2 rounded-r-md outline-0 hover:bg-gray-300 hover:text-orange-600 font-bold">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- menu -->
+    <!-- trending -->
+    <div class="bg-white shadow-lg p-2">
+        <div class="max-w-6xl m-auto">
+            <marquee behavior="right" direction="" class="text-xl font-bold text-blue-800">Web design is focused on how the website will look and feel to browsers. This means they’ll need to be able to produce work that is easy to understand, eye-catching and unique. Web development involves implementing these designs on the website’s backend and managing the site’s structure.</marquee>
+        </div>
+    </div>
+
+    <!-- banner -->
+    <div class="bg-blue-500 w-full">
+        <div class="banner row-start max-w-6xl m-auto flex justify-between item-center">
+            <div class="main-box grid grid-cols-12 gap-4 pt-10">
+                <div class="col-span-6">
+                    <h1 class="text-6xl font-bold text-white">Grow your skills to advance your career path</h1>
+                    <div id="digital-date" class="pt-10">
+                        <h6 class="text-3xl text-gray-100 font-bold py-5">Website development period</h6>
+                        <ul>
+                          <li class="inline-block text-center text-white bg-red-400 text-2xl rounded-xl w-24 h-24 font-bold"><span class="block p-2 text-center" id="days"></span>Days</li>
+                          <li class="inline-block text-center text-white bg-red-400 text-2xl rounded-xl w-24 h-24 font-bold"><span class="block p-2 text-center" id="hours"></span>Hours</li>
+                          <li class="inline-block text-center text-white bg-red-400 text-2xl rounded-xl w-24 h-24 font-bold"><span class="block p-2 text-center" id="minutes"></span>Minutes</li>
+                          <li class="inline-block text-center text-white bg-red-400 text-2xl rounded-xl w-24 h-24 font-bold"><span class="block p-2 text-center" id="seconds"></span>Seconds</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-span-6">
+                    <img src="./assets/images/banner/hero.png" alt="" class="w-full h-full">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- detail -->
+    <div class="about-home-page row-start main-box-detail my-5 max-w-6xl m-auto">
+        <h1 class="text-5xl text-center font-bold pt-0 pb-20 text-blue-800">About Program Languages</h1>
+        <div class="row-start">
+            <div class="main-box-detail-home-page grid grid-cols-12 gap-5">
+                <div class="main-box col-span-2" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="box-detail text-center shadow p-1 rounded-lg w-full">
+                        <img src="./assets/images/icon/html.png" alt="" class="w-14 h-14 m-auto">
+                        <div class="text-blue-800">
+                            <h6 class="text-xl py-2 text-orange-800 font-bold">HTML5</h6>
+                            <p class="text-md">HTML is the standard markup language for Web pages.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-box col-span-2" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="box-detail text-center shadow p-1 rounded-lg">
+                        <img src="./assets/images/icon/css.png" alt="" class="w-14 h-14 m-auto">
+                        <div class="text-blue-800">
+                            <h6 class="text-xl py-2 text-orange-800 font-bold">CSS3</h6>
+                            <p class="text-md">CSS is the language we use to style an HTML document.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-box col-span-2" data-aos="fade-down" data-aos-duration="1500">
+                    <div class="box-detail text-center shadow p-1 rounded-lg w-full">
+                        <img src="./assets/images/icon/bootstrap.png" alt="" class="w-14 h-14 m-auto">
+                        <div class="text-blue-800">
+                            <h6 class="text-xl py-2 text-orange-800 font-bold">Bootstrap</h6>
+                            <p class="text-md">Bootstrap is the world's most famous free CSS framework.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-box col-span-2" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="box-detail text-center shadow p-1 rounded-lg">
+                        <img src="./assets/images/icon/js.png" alt="" class="w-14 h-14 m-auto">
+                        <div class="text-blue-800">
+                            <h6 class="text-xl py-2 text-orange-800 font-bold">JavaScript</h6>
+                            <p class="text-md">JavaScript is the world's most popular programming language.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-box col-span-2" data-aos="fade-down" data-aos-duration="1500">
+                    <div class="box-detail text-center shadow p-1 rounded-lg">
+                        <img src="./assets/images/icon/jq.png" alt="" class="w-14 h-14 m-auto">
+                        <div class="text-blue-800">
+                            <h6 class="text-xl py-2 text-orange-800 font-bold">JQuery</h6>
+                            <p class="text-md">jQuery is a JavaScript Library.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-box col-span-2" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="box-detail text-center shadow p-1 rounded-lg">
+                        <img src="./assets/images/icon/tailwind.png" alt="" class="w-14 h-14 m-auto">
+                        <div class="text-blue-800">
+                            <h6 class="text-xl py-2 text-orange-800 font-bold">Tailwind CSS</h6>
+                            <p class="text-md">Tailwind CSS is the only framework that I've seen scale on large teams.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- feature -->
+    <div class="feature-one row-start max-w-6xl m-auto py-10">
+        <div class="box-one grid grid-cols-12 gap-5">
+            <div class="box col-span-6 m-auto" data-aos="fade-right" data-aos-duration="1500">
+                <img src="./assets/images/hero/2.png" alt="">
+            </div>
+            <div class="col-span-6" data-aos="fade-left" data-aos-duration="1500">
+                <h1 class="text-orange-800 text-5xl font-bold py-5">What is Web Design?</h1>
+                <h6 class="text-blue-800 text-xl font-bold py-5">Web design is what creates the overall look and feel when you’re using a website. It’s the process of planning and building the elements of your website, from structure and layout to images, colors, fonts and graphics. Web design has numerous components that work together to create the finished experience of a website, including graphic design, user experience design, interface design,</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature-two row-start max-w-6xl m-auto py-10">
+        <div class="box-two grid grid-cols-12 gap-5">
+            <div class="col-span-6" data-aos="fade-right" data-aos-duration="1500">
+                <h1 class="text-orange-800 text-5xl font-bold py-5">What is Responsive Web Design?</h1>
+                <h6 class="text-blue-800 text-xl font-bold py-5">Responsive web design makes your web page look good on all devices.</h6>
+                <p class="text-lg text-blue-800 py-2">-&nbsp;@media (min-width: 320px) and (max-width: 480px)&emsp;(For Mobile)</p>
+                <p class="text-lg text-blue-800 py-2">-&nbsp;@media (min-width: 481px) and (max-width: 767px)&emsp;(For Tablet)</p>
+                <p class="text-lg text-blue-800 py-2">-&nbsp;@media (min-width: 768px) and (max-width: 1024px)&emsp;(For Laptop)</p>
+                <p class="text-lg text-blue-800 py-2">-&nbsp;@media (min-width: 1025px)&emsp;(For Desktop)</p>
+            </div>
+            <div class="box col-span-6 m-auto" data-aos="fade-left" data-aos-duration="1500">
+                <img src="./assets/images/hero/Responsive.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-gray-900 pt-10">
+        <div class="main-box max-w-6xl m-auto">
+            <div class="row-start">
+                <div class="box grid grid-cols-12 gap-5">
+                    <div class="col-span-4">
+                        <div class="logo">
+                            <a href="./index.html"><img src="./assets/images/logo/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-span-4">
+                        <div class="about text-center text-white">
+                            <h6 class="text-3xl font-bold">About Us</h6>
+                            <p class="text-xl py-2">CodeCambo is a blog where you can learn HTML, CSS, Bootstrap, JavaScript, JQuery and Tailwind along with creative CSS Animations and Effects.</p>
+                        </div>
+                    </div>
+                    <div class="col-span-4">
+                        <div class="social text-white text-center">
+                            <h6 class="text-3xl font-bold">Follow Us</h6>
+                            <div class="inline-block">
+                                <a href="#" class="text-xl float-left mx-2 my-4 w-8 h-8"><img class="w-full h-full" src="./assets/images/icon/facebook.png" alt=""></a>
+                                <a href="#" class="text-xl float-left mx-2 my-4 w-8 h-8"><img class="w-full h-full" src="./assets/images/icon/youtube.png" alt=""></a>
+                                <a href="#" class="text-xl float-left mx-2 my-4 w-8 h-8"><img class="w-full h-full" src="./assets/images/icon/tiktok.png" alt=""></a>
+                                <a href="#" class="text-xl float-left mx-2 my-4 w-8 h-8"><img class="w-full h-full" src="./assets/images/icon/telegram.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="text-xl text-white font-bold text-center pt-5">Copyright © 2022 CodeCambo All Rights Reserved</h1>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script link -->
+    <script src="./assets/script/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
